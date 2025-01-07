@@ -1,7 +1,7 @@
 {
   "name": "swagger-api-build-script",
-  "version": "0.1.0",
-  "description": "一个从 Swagger/OpenAPI 规范自动生成 TypeScript API 客户端代码的脚本工具。",
+  "version": "0.1.1",
+  "description": "一个从 Swagger/OpenAPI 规范构建生成 TypeScript API 客户端代码的脚本工具。",
   "main": "api-build/build.js",
   "scripts": {
     "build:api": "node api-build/build.js \"https://petstore.swagger.io/v2/swagger.json\" \"src/apis\""
