@@ -2,6 +2,8 @@
 
 这是一个简单的 NodeJS 脚本工具，用于在本地从 Swagger/OpenAPI 规范的接口链接构建生成 TypeScript API 客户端代码。
 
+![效果预览](docs/screenshots/preview.png)
+
 ## 使用方法
 
 1. 复制完整的 `api-build` 目录到你的前端项目目录中
