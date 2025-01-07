@@ -1,0 +1,21 @@
+{
+  "name": "swagger-api-build-script",
+  "version": "0.1.0",
+  "description": "一个从 Swagger/OpenAPI 规范自动生成 TypeScript API 客户端代码的脚本工具。",
+  "main": "api-build/build.js",
+  "scripts": {
+    "build:api": "node api-build/build.js \"https://petstore.swagger.io/v2/swagger.json\" \"src/apis\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lileyzhao/swagger-api-build-script.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/lileyzhao/swagger-api-build-script/issues"
+  },
+  "homepage": "https://github.com/lileyzhao/swagger-api-build-script#readme"
+}
