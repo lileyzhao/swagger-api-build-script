@@ -1,7 +1,7 @@
 import path from 'path'
 import { fileURLToPath } from 'url'
 import fs from 'fs'
-import { execSync, exec } from 'child_process'
+import { execSync } from 'child_process'
 import os from 'os'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -26,8 +26,8 @@ const validateArgs = () => {
   if (!swaggerUrl || !outputDir)
     throw new Error(
       '需要提供两个参数\n' +
-        '用法: node build-api.js <swagger-url> <output-directory>\n' +
-        '示例: node build-api.js "http://localhost:8080/api/swagger.json" "src/apis"'
+        '用法: node build.js <swagger-url> <output-directory>\n' +
+        '示例: node build.js "http://localhost:8080/api/swagger.json" "src/apis"'
     )
 
   // 验证 Swagger URL
