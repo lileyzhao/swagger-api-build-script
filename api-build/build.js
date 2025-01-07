@@ -197,8 +197,8 @@ const generateApi = async (swaggerUrl, outputPath) => {
 
     const jreDir = path.join(__dirname, 'jre', 'jre11')
     if (!(fs.existsSync(jreDir) && fs.readdirSync(jreDir).length > 0)) {
-      logger.step('JRE 文件不存在，正在解压...', jreZipPath, jreDir)
-      await unzipFile(jreZipPath, jreDir)
+      logger.step(`JRE 文件不存在，正在解压: ${jreZipPath}`)
+      await unzipFile(jreZipPath, jreDir, { silent: true })
     }
     logger.info(`JRE 环境目录:\t${jreDir}`)
 
